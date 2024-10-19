@@ -12,7 +12,7 @@ order: 3
 
 - [React 工作循环](./workloop.md): 从宏观的角度介绍 React 体系中两个重要的循环, 其中`任务调度循环`就是本文的主角.
 - [reconciler 运作流程](./reconciler-workflow.md): 从宏观的角度介绍了`react-reconciler`包的核心作用, 并把`reconciler`分为了 4 个阶段. 其中第 2 个阶段`注册调度任务`串联了`scheduler`包和`react-reconciler`包, 其实就是`任务调度循环`中的一个任务(`task`).
-- [React 中的优先级管理](./priority.md): 介绍了 React 体系中的 3 中优先级的管理, 列出了源码中`react-reconciler`与`scheduler`包中关于优先级的转换思路. 其中`SchedulerPriority`控制`任务调度循环`中循环的顺序.
+- [React 中的优先级管理](./priority.md): 介绍了 React 体系中的 3 种优先级的管理, 列出了源码中`react-reconciler`与`scheduler`包中关于优先级的转换思路. 其中`SchedulerPriority`控制`任务调度循环`中循环的顺序.
 
 了解上述基础知识之后, 再谈`scheduler`原理, 其实就是在大的框架下去添加实现细节, 相对较为容易. 下面就正式进入主题.
 
